@@ -11,6 +11,7 @@
 # count = 0
 # if num <= 0:
 #     print("The Number no longer than 'zero'")   
+
 # while num > 0 :
 #     num -= 1   
 #     if num == 0:
@@ -19,7 +20,7 @@
 #         continue
 #     count +=1
 #     print(num)
-# print(f"{count} Numbers printed succesfully.")
+# print(f"{'No' if count <= 0 else count} Numbers printed succesfully.")
     
 # # Second assignment
 
@@ -42,7 +43,8 @@
 # skills = ["HTML", "CSS", "JS","PHP", "Python"]
 # while skills:
 #     print(skills.pop(0))
-    
+# print(skills) # skills list become empty so the value for list now is 'False' so that loop is finish
+
 # # Fourth assignment
 
 my_friends = list()
@@ -61,8 +63,6 @@ while len(my_friends) < 4 :
         my_friends.append(name)
         max_friends -= 1
         print(f"{name} was added, {'Add the last' if max_friends == 1 else max_friends} name left")
-    elif max_friends == 0 :
-        print("List is full")
 else:
     print("Your List Is Full")
        
